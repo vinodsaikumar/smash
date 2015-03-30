@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIBC</title>
+<link rel="stylesheet" type="text/css"
+	href="http://fonts.googleapis.com/css?family=Ranchers%7CCapriola">
+<link href="http://fonts.googleapis.com/css?family=Medula+One"
+	rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/smash.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api/js/recaptcha_ajax.js'></script>
+<script src="js/smash.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57921692-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#smashItNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand website-logo">
+					<img src="images/logo.png" class="img-thumbnail" alt="LOGO">
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="smashItNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#league">League</a></li>
+					<li><a href="#contactus">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12" style="height: 50px"></div>
+		</div>
+		<div class="row" id="home">
+			<div class="col-sm-12 column-style">
+				<img class="banner_img" alt="" src="images/banner.jpg">
+			</div>
+		</div>
+		<div class="row website-quote">
+			<div class="col-sm-12">
+				<div class="text-center">
+					<p>It's not the will to win that matters-everyone has that.
+						It's the will to prepare to win that matters. - Paul "Bear" Bryant</p>
+				</div>
+			</div>
+		</div>
+		<div class="row website-header" id="schedule">
+			<div class="col-sm-12">
+				<div class="text-left">
+					<h1>Schedule</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row website-schedule">
+			<div class="col-sm-12">
+				<div class="text-left">
+					<p>We are a bunch of badminton enthusiasts, started the club in
+						early 2014. We play twice a week and also play league matches with
+						other club players in and around Slough. If you would like to join
+						us, please use the contact us link from the menu and we will get
+						in touch with you as soon as possible.</p>
+				</div>
+				<div class="row website-schedule">
+					<div class="col-sm-6 website-cnight">
+						<div class="text-center">
+							<h3>Club Night</h3>
+						</div>
+						<div class="text-left">
+							<p>Venue-Herschel Grammar School, Slough, Berkshire, SL13BW |
+								Tel: 01753 520950</p>
+							<p>Time-Tuesdays, 21:00 to 22:00</p>
+						</div>
+						<div id="club-night-map" class="text-center website-google-maps">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6574065655263!2d-0.6115409999999739!3d51.51950099999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876652987062379%3A0x300a5ba219350c79!2sHerschel+Grammar+School!5e0!3m2!1sen!2suk!4v1416927465555"
+								frameborder="0" style="border: 0"></iframe>
+						</div>
+					</div>
+					<div class="col-sm-6 website-cweekend">
+						<div class="text-center">
+							<h3>Club Weekend</h3>
+						</div>
+						<div class="text-left">
+							<p>Venue-Langley College, Station Road, Langley, Berkshire,
+								SL3 8BY | Tel: 01753 545649</p>
+							<p>Time-Sundays, 09:30 to 10:30</p>
+						</div>
+						<div id="club-weekend-map" class="text-center website-google-maps">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2483.4195199066644!2d-0.5449814999999999!3d51.50551900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4c855b84bd0a59a9!2sLangley+College!5e0!3m2!1sen!2suk!4v1416927970473"
+								frameborder="0" style="border: 0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row website-header" id="league">
+			<div class="col-sm-12">
+				<div class="text-left">
+					<h1>The League</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row website-league">
+			<div class="col-sm-12">
+				<div class="text-left">
+					<p>
+						The league is organized by http://www.nationalamateurleague.com and the approximate duration of this league is from <span
+							id="league-metadata-duration"> </span> we play every <span
+							id="league-metadata-time"></span> @ <span
+							id="league-metadata-venue"></span>
+					</p>
+				</div>
+				<div class="row website-league">
+					<div class="col-sm-6 website-hof">
+						<div class="text-center">
+							<h3>Hall of Fame</h3>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>Rank</th>
+										<th>Players</th>
+										<th>Played</th>
+										<th>Won</th>
+										<th>Sets played to win</th>
+										<th>Won by pts</th>
+										<th>Avg. set pts</th>
+									</tr>
+								</thead>
+								<tbody id="team-performance">
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="col-sm-6 website-scoreboard">
+						<div class="text-center">
+							<h3>Score Board</h3>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>Team One</th>
+										<th>Team Two</th>
+										<th>Scores</th>
+									</tr>
+								</thead>
+								<tbody id="score-board">
+								</tbody>
+							</table>
+						</div>
+						<nav>
+							<ul class="pager">
+								<li class="previous"><a href="javascript:void(0)" id="sb-pagination-older"><span
+										aria-hidden="true">&larr;</span> Older</a></li>
+								<li class="next"><a href="javascript:void(0)" id="sb-pagination-newer">Newer <span
+										aria-hidden="true">&rarr;</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row website-header" id="contactus">
+			<div class="col-sm-12">
+				<div class="text-left">
+					<h1>Contact Us</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row website-contactus">
+			<div class="col-sm-6 website-letusknow">
+				<div class="text-center">
+					<h3>Let us know ..</h3>
+				</div>
+				<div class="text-center">
+					<label class="contactus-fields-error"
+						id="contactus-fields-serverside-error-message"></label> <label
+						class="contactus-fields-success"
+						id="contactus-fields-serverside-success-message"></label>
+				</div>
+				<form name="contactus-form" id="contactus-form"
+					novalidate="novalidate" method="post" action="contactus"
+					class="form-horizontal contactus-fields" role="form">
+					<div class="form-group contactus-field-elements">
+						<label for="fname" class="col-sm-4 control-label">First
+							Name<sup>*</sup>
+						</label>
+						<div class="col-sm-8">
+							<input id="fname" name="fname" class="form-control">
+						</div>
+					</div>
+					<div class="form-group contactus-fields-error">
+						<div class="col-sm-offset-4 col-sm-8"></div>
+					</div>
+					<div class="form-group contactus-field-elements">
+						<label for="lname" class="col-sm-4 control-label">Last
+							Name<sup>*</sup>
+						</label>
+						<div class="col-sm-8">
+							<input id="lname" name="lname" class="form-control">
+						</div>
+					</div>
+					<div class="form-group contactus-fields-error">
+						<div class="col-sm-offset-4 col-sm-8"></div>
+					</div>
+					<div class="form-group contactus-field-elements">
+						<label for="email" class="col-sm-4 control-label">Email<sup>*</sup>
+						</label>
+						<div class="col-sm-8">
+							<input id="email" name="email" class="form-control">
+						</div>
+					</div>
+					<div class="form-group contactus-fields-error">
+						<div class="col-sm-offset-4 col-sm-8"></div>
+					</div>
+					<div class="form-group contactus-field-elements">
+						<label for="message" class="col-sm-4 control-label">Message<sup>*</sup>
+						</label>
+						<div class="col-sm-8">
+							<textarea id="message" name="message" rows="8" cols="35"
+								class="form-control"></textarea>
+						</div>
+					</div>
+					<div class="form-group contactus-fields-error">
+						<div class="col-sm-offset-4 col-sm-8"></div>
+					</div>
+
+					<div class="form-group contactus-field-elements">
+						<div class="col-sm-offset-4 col-sm-8">
+							<div id="contactus-fields-captcha" class="g-recaptcha"
+								data-sitekey="6Lehb_4SAAAAAAwBAsxDh58seLvXU-eA2CJO6qlZ"></div>
+						</div>
+					</div>
+					<div class="form-group contactus-fields-error">
+						<div class="col-sm-offset-4 col-sm-8"
+							id="contactus-fields-captcha-error"></div>
+					</div>
+					<div class="form-group contactus-field-elements">
+						<div class="col-sm-offset-4 col-sm-8">
+							<button type="submit" id="contact-us-form-submit-button" data-loading-text="Submiting..." class="btn btn-default">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-6 website-whoweare">
+				<div class="text-center">
+					<h3>Who we are ..</h3>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Aman</div>
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Basavaraj</div>
+
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Deepthi</div>
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Sharan</div>
+
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Vinayak</div>
+						<div class="text-center website-aboutus-image">
+							<img src="images/noimage.gif" class="img-circle"
+								alt="Circular Image">
+						</div>
+						<div class="text-center website-aboutus-name">Vinod</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container website-footer">
+			<p class="text-right">Copyright © Smash It Badminton Club. All
+				right reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
